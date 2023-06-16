@@ -1,0 +1,125 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+body header {
+  background-color: rgba(6, 12, 0, 0.322);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+body header span {
+  font-size: 1.5rem;
+}
+body header nav ul {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+}
+body header nav ul li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+}
+body header nav ul li a:hover {
+  color: rgb(78, 7, 78);
+}
+body header nav ul li a:active {
+  color: rgb(163, 31, 163);
+}
+body main {
+  background-color: rgb(245, 249, 252);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+body main h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+body main #presentation {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 70%;
+}
+body main #presentation img {
+  height: 30vh;
+}
+body main #presentation div > p {
+  font-size: 1.5rem;
+  text-align: justify;
+  padding: 1rem;
+}
+body main #contact {
+  height: 45vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+body main #contact h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+body main #contact form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0%;
+}
+body main #contact form input {
+  font-size: 1.2em;
+  height: 2rem;
+  width: 25rem;
+  text-align: center;
+}
+body main #contact form h3 {
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+body main #contact .msg, body main #contact .infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  height: 80%;
+  width: 45%;
+  border: 1px solid black;
+  box-shadow: 3px 3px rgb(245, 249, 252), -1em 0 0.4em rgba(156, 143, 124, 0.801);
+  background-color: rgba(49, 52, 54, 0.253);
+}
+body main #contact .msg textarea, body main #contact .infos textarea {
+  resize: none;
+  font-size: 1.2em;
+  width: 25rem;
+  text-align: center;
+}
+body main #contact .msg .btn button, body main #contact .infos .btn button {
+  background-color: white;
+  color: black;
+  font-size: 1.1em;
+  border-radius: 0.3rem;
+  width: 6rem;
+  border: 1px solid white;
+}
+body footer {
+  background-color: rgba(6, 12, 0, 0.322);
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+body footer span {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=page3.css.map */

@@ -1,0 +1,73 @@
+
+$primary-color:rgb(245, 249, 252);
+$secondary-color:rgba(134, 90, 121, 0.356);
+$h1-size: 3rem;
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{    
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    
+    span{
+
+        font-size: 1.5rem
+    }
+
+    nav{
+        ul {
+            display: flex;
+            gap: 1rem;
+            padding: 2rem;
+
+            li{
+        
+                a{
+                 text-decoration: none;
+                 font-size: 1.3rem;
+                 color: black;           
+     
+     
+                }
+
+                a:hover {
+                    color: rgb(78, 7, 78);
+                }
+                a:active {
+                    color: rgb(163, 31, 163);
+                }
+            }
+            
+        }
+
+        
+}
+}
+main{
+background-color:$secondary-color;
+h1{
+
+    font-size:$h1-size ;
+    text-align: center;
+
+}
+
+}
+footer{
+    background-color: $primary-color;
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    
+    span{
+      font-size: 1rem;
+    }
+}

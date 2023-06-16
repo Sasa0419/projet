@@ -1,0 +1,113 @@
+$primary-color: rgb(245, 249, 252);
+$secondary-color: rgba(134, 90, 121, 0.356);
+$h1-size: 3rem;
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+
+  span {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 1rem;
+      padding: 2rem;
+
+      li {
+        a {
+          text-decoration: none;
+          font-size: 1.3rem;
+          color: black;
+
+          &:hover {
+            color: rgb(78, 7, 78);
+          }
+
+          &:active {
+            color: rgb(163, 31, 163);
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  h1 {
+    font-size: $h1-size;
+    text-align: center;
+  }
+
+  .table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit:cover;
+    }
+    .image{
+        
+    }
+
+
+    table {
+      width: 50%;
+      height: 50vh;
+      table-layout: fixed;
+
+      th, td {
+        border: 1px solid rgb(19, 16, 16);
+        border-collapse: collapse;
+        font-size: 1.1rem;
+        text-align: center;
+        width: 20%;
+        max-height:20%;
+        margin: 0;
+      }
+
+      th {
+        background-color: rgb(235, 172, 172);
+      }
+
+      button{
+
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $primary-color;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-size: 1rem;
+  }
+}
